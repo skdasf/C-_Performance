@@ -1,19 +1,7 @@
-/*
- * C++ Design Patterns: Chain of Responsibility
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 #include <iostream>
 
-/*
- * Handler
- * defines an interface for handling requests and
- * optionally implements the successor link
- */
+
 class Handler
 {
 public:
@@ -37,10 +25,6 @@ private:
   Handler *successor;
 };
 
-/*
- * Concrete Handlers
- * handle requests they are responsible for
- */
 class ConcreteHandler1 : public Handler
 {
 public:

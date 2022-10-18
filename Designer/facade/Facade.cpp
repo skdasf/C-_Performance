@@ -1,20 +1,8 @@
-/*
- * C++ Design Patterns: Facade
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
-/*
- * Subsystems
- * implement more complex subsystem functionality
- * and have no knowledge of the facade
- */
+
 class SubsystemA
 {
 public:

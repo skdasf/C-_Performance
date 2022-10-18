@@ -1,12 +1,4 @@
-/*
- * C++ Design Patterns: Mediator
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <vector>
@@ -14,11 +6,7 @@
 
 class Mediator;
 
-/*
- * Colleague classes
- * each colleague communicates with its mediator whenever
- * it would have otherwise communicated with another colleague
- */
+
 class Colleague
 {
 public:
@@ -56,10 +44,7 @@ public:
   }
 };
 
-/*
- * Mediator
- * defines an interface for communicating with Colleague objects
- */
+
 class Mediator
 {
 public:
@@ -72,11 +57,7 @@ protected:
   Mediator() {}
 };
 
-/*
- * Concrete Mediator
- * implements cooperative behavior by coordinating Colleague objects
- * and knows its colleagues
- */
+
 class ConcreteMediator : public Mediator
 {
 public:

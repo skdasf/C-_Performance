@@ -1,19 +1,7 @@
-/*
- * C++ Design Patterns: Bridge
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
-/*
- * Implementor
- * defines the interface for implementation classes
- */
 class Implementor
 {
 public:
@@ -23,10 +11,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Implementors
- * implement the Implementor interface and define concrete implementations
- */
+
 class ConcreteImplementorA : public Implementor
 {
 public:
@@ -64,10 +49,7 @@ public:
   // ...
 };
 
-/*
- * RefinedAbstraction
- * extends the interface defined by Abstraction
- */
+
 class RefinedAbstraction : public Abstraction
 {
 public:

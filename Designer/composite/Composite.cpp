@@ -1,21 +1,9 @@
-/*
- * C++ Design Patterns: Composite
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <vector>
 
-/*
- * Component
- * defines an interface for all objects in the composition
- * both the composite and the leaf nodes
- */
+
 class Component
 {
 public:
@@ -32,11 +20,6 @@ public:
   virtual void operation() = 0;
 };
 
-/*
- * Composite
- * defines behavior of the components having children
- * and store child components
- */
 class Composite : public Component
 {
 public:
@@ -77,11 +60,7 @@ private:
   std::vector<Component*> children;
 };
 
-/*
- * Leaf
- * defines the behavior for the elements in the composition,
- * it has no children
- */
+
 class Leaf : public Component
 {
 public:

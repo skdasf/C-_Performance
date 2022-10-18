@@ -1,20 +1,9 @@
-/*
- * C++ Design Patterns: Interpreter
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <map>
 
-/*
- * Context
- * contains information that's global to the interpreter
- */
+
 class Context
 {
 public:
@@ -34,11 +23,7 @@ private:
   // ...
 };
 
-/*
- * Abstract Expression
- * declares an abstract Interpret operation that is common to all nodes
- * in the abstract syntax tree
- */
+
 class AbstractExpression
 {
 public:
@@ -51,12 +36,7 @@ public:
   // ...
 };
 
-/*
- * Terminal Expression
- * implements an Interpret operation associated with terminal symbols
- * in the grammar (an instance is required for every terminal symbol
- * in a sentence)
- */
+
 class TerminalExpression : public AbstractExpression
 {
 public:
@@ -75,11 +55,7 @@ private:
   // ...
 };
 
-/*
- * Nonterminal Expression
- * implements an Interpret operation for nonterminal symbols
- * in the grammar (one such class is required for every rule in the grammar)
- */
+
 class NonterminalExpression : public AbstractExpression
 {
 public:
@@ -107,8 +83,7 @@ private:
 
 int main()
 {
-  // An example of very simple expression tree
-  // that corresponds to expression (A AND B)
+
   AbstractExpression *A = new TerminalExpression("A");
   AbstractExpression *B = new TerminalExpression("B");
   AbstractExpression *exp = new NonterminalExpression( A, B );

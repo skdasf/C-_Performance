@@ -1,21 +1,9 @@
-/*
- * C++ Design Patterns: Factory Method
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <string>
 
-/*
- * Product
- * products implement the same interface so that the classes can refer
- * to the interface not the concrete product
- */
+
 class Product
 {
 public:
@@ -25,10 +13,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Product
- * define product to be created
- */
+
 class ConcreteProductA : public Product
 {
 public:
@@ -41,10 +26,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Product
- * define product to be created
- */
+
 class ConcreteProductB : public Product
 {
 public:
@@ -57,11 +39,7 @@ public:
   // ...
 };
 
-/*
- * Creator
- * contains the implementation for all of the methods
- * to manipulate products except for the factory method
- */
+
 class Creator
 {
 public:
@@ -75,12 +53,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Creator
- * implements factory method that is responsible for creating
- * one or more concrete products ie. it is class that has
- * the knowledge of how to create the products
- */
+
 class ConcreteCreator : public Creator
 {
 public:

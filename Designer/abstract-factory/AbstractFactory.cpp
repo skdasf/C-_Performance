@@ -1,20 +1,6 @@
-/*
- * C++ Design Patterns: Abstract Factory
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
 
 #include <iostream>
 
-/*
- * Product A
- * products implement the same interface so that the classes can refer
- * to the interface not the concrete product
- */
 class ProductA
 {
 public:
@@ -24,10 +10,7 @@ public:
   // ...
 };
 
-/*
- * ConcreteProductAX and ConcreteProductAY
- * define objects to be created by concrete factory
- */
+
 class ConcreteProductAX : public ProductA
 {
 public:
@@ -52,11 +35,7 @@ public:
   // ...
 };
 
-/*
- * Product B
- * same as Product A, Product B declares interface for concrete products
- * where each can produce an entire set of products
- */
+
 class ProductB
 {
 public:
@@ -66,10 +45,7 @@ public:
   // ...
 };
 
-/*
- * ConcreteProductBX and ConcreteProductBY
- * same as previous concrete product classes
- */
+
 class ConcreteProductBX : public ProductB
 {
 public:

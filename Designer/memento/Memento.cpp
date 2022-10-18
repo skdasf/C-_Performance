@@ -1,25 +1,13 @@
-/*
- * C++ Design Patterns: Memento
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <vector>
 
-/*
- * Memento
- * stores internal state of the Originator object and protects
- * against access by objects other than the originator
- */
+
 class Memento
 {
 private:
-  // accessible only to Originator
+
   friend class Originator;
   
   Memento( const int s ) : state( s ) {}
@@ -40,15 +28,11 @@ private:
   // ...
 };
 
-/*
- * Originator
- * creates a memento containing a snapshot of its current internal
- * state and uses the memento to restore its internal state
- */
+
 class Originator
 {
 public:
-  // implemented only for printing purpose
+
   void setState( const int s )
   {
     std::cout << "Set state to " << s << "." << std::endl;
@@ -76,10 +60,7 @@ private:
   // ...
 };
 
-/*
- * CareTaker
- * is responsible for the memento's safe keeping
- */
+
 class CareTaker
 {
 public:

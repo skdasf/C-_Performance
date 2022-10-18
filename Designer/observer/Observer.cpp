@@ -1,23 +1,11 @@
-/*
- * C++ Design Patterns: Observer
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <vector>
 
 class Subject;
 
-/*
- * Observer
- * defines an updating interface for objects that should be notified
- * of changes in a subject
- */
+
 class Observer
 {
 public:
@@ -28,11 +16,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Observer
- * stores state of interest to ConcreteObserver objects and
- * sends a notification to its observers when its state changes
- */
+
 class ConcreteObserver : public Observer
 {
 public:
@@ -54,11 +38,7 @@ private:
   // ...
 };
 
-/*
- * Subject
- * knows its observers and provides an interface for attaching
- * and detaching observers
- */
+
 class Subject
 {
 public:

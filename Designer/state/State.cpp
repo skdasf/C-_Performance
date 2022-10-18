@@ -1,20 +1,8 @@
-/*
- * C++ Design Patterns: State
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
-/*
- * State
- * defines an interface for encapsulating the behavior associated
- * with a particular state of the Context
- */
+
 class State
 {
 public:
@@ -23,11 +11,7 @@ public:
   // ...
 };
 
-/*
- * Concrete States
- * each subclass implements a behavior associated with a state
- * of the Context
- */
+
 class ConcreteStateA : public State
 {
 public:
@@ -37,7 +21,7 @@ public:
   {
     std::cout << "State A handled." << std::endl;
   }
-  // ...
+
 };
 
 class ConcreteStateB : public State
@@ -52,10 +36,7 @@ public:
   // ...
 };
 
-/*
- * Context
- * defines the interface of interest to clients
- */
+
 class Context
 {
 public:

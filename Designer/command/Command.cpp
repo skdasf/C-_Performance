@@ -1,20 +1,8 @@
-/*
- * C++ Design Patterns: Command
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
-/*
- * Receiver
- * knows how to perform the operations associated
- * with carrying out a request
- */
+
 class Receiver
 {
 public:
@@ -25,10 +13,7 @@ public:
   // ...
 };
 
-/*
- * Command
- * declares an interface for all commands
- */
+
 class Command
 {
 public:
@@ -40,11 +25,7 @@ protected:
   Command() {}
 };
 
-/*
- * Concrete Command
- * implements execute by invoking the corresponding
- * operation(s) on Receiver
- */
+
 class ConcreteCommand : public Command
 {
 public:
@@ -69,10 +50,7 @@ private:
   // ...
 };
 
-/*
- * Invoker
- * asks the command to carry out the request
- */
+
 class Invoker
 {
 public:

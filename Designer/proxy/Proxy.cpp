@@ -1,20 +1,8 @@
-/*
- * C++ Design Patterns: Proxy
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
-/*
- * Subject
- * defines the common interface for RealSubject and Proxy
- * so that a Proxy can be used anywhere a RealSubject is expected
- */
+
 class Subject
 {
 public:
@@ -24,10 +12,7 @@ public:
   // ...
 };
 
-/*
- * Real Subject
- * defines the real object that the proxy represents
- */
+
 class RealSubject : public Subject
 {
 public:
@@ -38,10 +23,7 @@ public:
   // ...
 };
 
-/*
- * Proxy
- * maintains a reference that lets the proxy access the real subject
- */
+
 class Proxy : public Subject
 {
 public:

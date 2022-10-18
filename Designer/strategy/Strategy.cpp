@@ -1,19 +1,8 @@
-/*
- * C++ Design Patterns: Strategy
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
-/*
- * Strategy
- * declares an interface common to all supported algorithms
- */
+
 class Strategy
 {
 public:
@@ -22,10 +11,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Strategies
- * implement the algorithm using the Strategy interface
- */
+
 class ConcreteStrategyA : public Strategy
 {
 public:
@@ -62,10 +48,7 @@ public:
   // ...
 };
 
-/*
- * Context
- * maintains a reference to a Strategy object
- */
+
 class Context
 {
 public:

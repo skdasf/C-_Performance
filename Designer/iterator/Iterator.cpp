@@ -1,12 +1,4 @@
-/*
- * C++ Design Patterns: Iterator
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <stdexcept>
@@ -15,11 +7,7 @@
 class Iterator;
 class ConcreteAggregate;
 
-/*
- * Aggregate
- * defines an interface for aggregates and it decouples your
- * client from the implementation of your collection of objects
- */
+
 class Aggregate
 {
 public:
@@ -29,12 +17,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Aggregate
- * has a collection of objects and implements the method
- * that returns an Iterator for its collection
- *
- */
+
 class ConcreteAggregate : public Aggregate
 {
 public:
@@ -68,11 +51,6 @@ private:
   // ...
 };
 
-/*
- * Iterator
- * provides the interface that all iterators must implement and
- * a set of methods for traversing over elements
- */
 class Iterator
 {
 public:
@@ -85,11 +63,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Iterator
- * implements the interface and is responsible for managing
- * the current position of the iterator
- */
+
 class ConcreteIterator : public Iterator
 {
 public:

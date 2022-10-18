@@ -1,20 +1,8 @@
-/*
- * C++ Design Patterns: Prototype
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
 
 #include <iostream>
 #include <string>
 
-/*
- * Prototype
- * declares an interface for cloning itself
- */
+
 class Prototype
 {
 public:
@@ -25,10 +13,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Prototype A and B
- * implement an operation for cloning itself
- */
+
 class ConcretePrototypeA : public Prototype
 {
 public:
@@ -61,10 +46,6 @@ public:
   // ...
 };
 
-/*
- * Client
- * creates a new object by asking a prototype to clone itself
- */
 class Client
 {
 public:

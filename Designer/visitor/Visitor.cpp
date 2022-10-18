@@ -1,12 +1,4 @@
-/*
- * C++ Design Patterns: Visitor
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 
@@ -14,11 +6,6 @@ class Element;
 class ConcreteElementA;
 class ConcreteElementB;
 
-/*
- * Visitor
- * declares a Visit operation for each class of ConcreteElement
- * in the object structure
- */
 class Visitor
 {
 public:
@@ -29,12 +16,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Visitors
- * implement each operation declared by Visitor, which implement
- * a fragment of the algorithm defined for the corresponding class
- * of object in the structure
- */
+
 class ConcreteVisitor1 : public Visitor
 {
 public:
@@ -69,10 +51,7 @@ public:
   // ...
 };
 
-/*
- * Element
- * defines an accept operation that takes a visitor as an argument
- */
+
 class Element
 {
 public:
@@ -82,10 +61,7 @@ public:
   // ...
 };
 
-/*
- * Concrete Elements
- * implement an accept operation that takes a visitor as an argument
- */
+
 class ConcreteElementA : public Element
 {
 public:

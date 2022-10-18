@@ -1,20 +1,8 @@
-/*
- * C++ Design Patterns: Builder
- * Author: Jakub Vojvoda [github.com/JakubVojvoda]
- * 2016
- *
- * Source code is licensed under MIT License
- * (for more details see LICENSE)
- *
- */
+
 
 #include <iostream>
 #include <string>
 
-/*
- * Product
- * the final object that will be created using Builder
- */
 class Product
 {
 public:
@@ -43,10 +31,7 @@ private:
   // ...
 };
 
-/*
- * Builder
- * abstract interface for creating products
- */
+
 class Builder
 {
 public:
@@ -106,10 +91,7 @@ public:
   // ...
 };
 
-/*
- * Director
- * responsible for managing the correct sequence of object creation
- */
+
 class Director {
 public:
   Director() : builder() {}
