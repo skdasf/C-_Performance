@@ -36,3 +36,9 @@
 /OpenCL/docs/OpenCL 2.0 异构计算 [第三版] （Heterogeneous Computing with OpenCL 2.0）.pdf
 *.pdf
 /OpenCL/docs
+/Observe/.vs/Observe
+/Observe/Debug/Observe.tlog
+/Observe/Debug
+/iocpframework/doc
+/iocpframework/Clean.bat
+/iocpframework/UpgradeLog.htm
