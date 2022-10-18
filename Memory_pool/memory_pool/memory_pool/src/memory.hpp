@@ -3,14 +3,12 @@
 #include<stdlib.h>
 struct NextOnFreeList;
 typedef NextOnFreeList* FreeListNext;
-//  连接空列表的相邻元素
 struct NextOnFreeList {
     NextOnFreeList* next;
 };
 
 namespace MemoryPoolVer1{
 class  Rational;
-// 需要重复new的类
 class Ratinal {
 				public:
 								Ratinal() = default;
