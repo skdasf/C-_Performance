@@ -9,18 +9,18 @@ namespace MemoryPoolVer1 {
     void* Ratinal::operator new(size_t size)
     {
         if (freeList == nullptr) {
-            Ratinal::expandTheFreeList(); // 如果列表为空 则扩展列表
+            Ratinal::expandTheFreeList();
         }
         FreeListNext head = freeList;
         freeList = head->next;
-        return head; // 将链表node转成实例对象。 --- FreeListNext 转成 Rational对象---这里就是为什么Node结点必须最大
+        return head;
     }
 
      void Ratinal::operator delete(void* doomed, size_t size)
     {
         FreeListNext head = (NextOnFreeList*)(doomed); 
-        head->next = freeList;  // ***指针放在左边，看做地址。指针变量放在有变看做变量***
-        freeList = head;  // 将Rational 转成 FreeListNext
+        head->next = freeList;
+        freeList = head;
     }
 
     void Ratinal::newMemPool()
@@ -51,13 +51,13 @@ namespace MemoryPoolVer1 {
     void  Ratinal::expandTheFreeList()
    {
          auto size = (sizeof(Ratinal)) > (sizeof(FreeListNext)) ? sizeof(Ratinal): sizeof(NextOnFreeList);
-         auto head = (void *)new char[size]; // 申请一个不仅比 链表node和类 大的内存。 
-         FreeListNext runer = static_cast<FreeListNext> (head); // 将该内存强转为链表node
+         auto head = (void *)new char[size];
+         FreeListNext runer = static_cast<FreeListNext> (head);
          freeList = runer;
          for (int i = 0; i < EXPANSION_SIZE ; i++) {
             auto meomery_block = (void*) new char[size];
             runer->next = static_cast<FreeListNext> (meomery_block);
-            runer = runer->next; //尾插法生成 内存链表
+            runer = runer->next;
          }
          runer->next = nullptr;
    }
@@ -77,7 +77,7 @@ namespace MemoryPoolVer2{
     {
         MemoryPool<T>* nextPtr = nextPtr_;
         while (nextPtr != nullptr) {
-            auto nextP = nextPtr->nextPtr_;//为什么能访问到 -- 该方法在类的内部实现，肯定能通过该类的指针访问到
+            auto nextP = nextPtr->nextPtr_;
             free(nextPtr);
             nextPtr = nextP;
         }

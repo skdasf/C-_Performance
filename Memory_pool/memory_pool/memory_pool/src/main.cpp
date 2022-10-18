@@ -2,7 +2,7 @@
 #include "memory.hpp"
 using namespace MemoryPoolVer1;
 FreeListNext Ratinal::freeList = nullptr;
-MemoryPoolVer2::MemoryPool<MemoryPoolVer2::RatinalVer2>* MemoryPoolVer2::RatinalVer2::memorypoolController = nullptr;  // 为什 需要全局声明类的static才能使用 -- 在类中访问静态成员变量需要在类的外部进行初始化
+MemoryPoolVer2::MemoryPool<MemoryPoolVer2::RatinalVer2>* MemoryPoolVer2::RatinalVer2::memorypoolController = nullptr;
 int main () {
   
     Ratinal *arry[1000];
