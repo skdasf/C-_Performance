@@ -3,3 +3,36 @@
 ################################################################################
 
 /.vs
+/Memory_pool/memory_pool/memory_pool/Debug
+/Memory_pool/memory_pool/Debug
+/Memory_pool/memory_pool/.vs/memory_pool
+/Memory_pool/memory_pool/memory_pool/memory_pool.vcxproj.user
+/Memory_pool/memory_pool/memory_pool.sln
+/Memory_pool/memory_pool/memory_pool/memory_pool.vcxproj.filters
+*.vcxproj
+/OpenCL/demo/oclBandwidth/NVIDIA GPU Computing SDK/OpenCL/bin/win64/Release/oclBandwidthTest.exe
+/OpenCL/demo/oclBandwidth/NVIDIA GPU Computing SDK/OpenCL/bin/win64/Debug
+/OpenCL/demo/oclBandwidth/NVIDIA GPU Computing SDK/OpenCL/common/lib
+*.vcproj
+*.sln
+/OpenCL/demo/oclBandwidth/NVIDIA GPU Computing SDK/shared/lib/Win32
+/OpenCL/demo/oclBandwidth/NVIDIA GPU Computing SDK/shared/lib/x64
+/OpenCL/demo/oclCopyCompute/NVIDIA GPU Computing SDK/OpenCL/bin/win64/Debug
+*.exe
+/OpenCL/demo/oclCopyCompute/NVIDIA GPU Computing SDK/OpenCL/common/lib
+/OpenCL/demo/oclCopyCompute/NVIDIA GPU Computing SDK/shared
+/OpenCL/demo/oclDeviceQuery/NVIDIA GPU Computing SDK/OpenCL/common/lib/Win32
+/OpenCL/demo/oclDeviceQuery/NVIDIA GPU Computing SDK/OpenCL/common/lib/x64
+/OpenCL/demo/oclDeviceQuery/NVIDIA GPU Computing SDK/shared
+/OpenCL/demo/oclReduction/NVIDIA GPU Computing SDK/OpenCL/common/lib
+/OpenCL/demo/oclReduction/NVIDIA GPU Computing SDK/shared/lib
+/thread_pool/.vs/thread_pool/config
+/thread_pool/.vs/thread_pool/v16/ipch/AutoPCH
+/thread_pool/Debug
+/thread_pool/x64/Debug
+/thread_pool/.vs/thread_pool/v16
+*.filters
+*.user
+/OpenCL/docs/OpenCL 2.0 异构计算 [第三版] （Heterogeneous Computing with OpenCL 2.0）.pdf
+*.pdf
+/OpenCL/docs
