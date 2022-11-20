@@ -7,7 +7,7 @@
 #include <typeinfo>
 #include <vector>
 #include "classField.h"
-class object_t; // 解决重包含
+class object_t;
 typedef std::function<std::shared_ptr<object_t> ()> create_method;
 namespace djl{
     namespace  reflect{

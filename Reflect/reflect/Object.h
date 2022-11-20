@@ -41,7 +41,7 @@ void object_t::get_value(const std::string& filedName, T& t) {
     auto factory = djl::utility::singleton_t<djl::reflect::classFactory_t>::getinstance();
     auto f = factory->get_field(className, filedName);
     auto offset = f.getoffset();
-    t = *(T*)((unsigned char*)(this) + offset); // *(T*) ´ýÀí½â
+    t = *(T*)((unsigned char*)(this) + offset);
 }
 
 
